@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Navigation = styled.nav`
+  z-index: 10;
   position: absolute;
   right: 103px;
 

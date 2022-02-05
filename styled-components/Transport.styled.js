@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const AboutTransport = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-right: 85px;
 
   h2 {
     font-family: Gilroy;
     font-size: 47px;
-    padding: 0px 0 0 80px;
+    padding: 73px 0 56px 80px;
     color: #1c1c1c;
     font-weight: 300;
     margin-bottom: 0px;
@@ -21,68 +20,63 @@ export const AboutTransport = styled.div`
   }
 
   div {
+    width: 50vw;
+    @media (max-width: 1440px) {
+      flex-direction: column;
+      width: 100vw;
+    }
     cursor: pointer;
-    max-width: 73%;
-    margin: 0px 142px 0 0;
-    background: #f6f6f6;
-    @media screen and (max-width: 1440px) {
-        max-width: 100%;
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    div:nth-child(1) {
+      background: ${({ change }) => (change ? "#f6f6f6" : "white")};
+      h4 {
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 0;
+        color: #000000;
+        padding: 37px 0 0 82px;
       }
 
-    h4 {
-      font-family: Gilroy;
-      font-size: 25px;
-      font-weight: 300;
-      padding: 40px 0 0 81px;
-      margin-bottom: 0px;
+      p {
+        padding: 1px 82px;
+        font-size: 18px;
+        font-family: Gilroy;
+        line-height: 32px;
+      }
     }
 
-    p {
-      padding: 7px 81px;
-      font-family: Gilroy;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 32px;
-      color: black;
+    div:nth-of-type(2) {
+      background: ${({ change }) => (!change ? "#f6f6f6" : "white")};
+      h4 {
+        color: #000000;
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 40px;
+        padding: 134px 0 0 82px;
+        margin: 0 0 0 0;
+      }
+
+      p {
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 300;
+        color: #000000;
+        padding: 1px 0 0 80px;
+      }
     }
   }
 
-  div{
-    cursor: pointer;
-    background-color: white;
-    margin: 0px 0px 0;
+  .techDescription {
+    position: relative;
     display: flex;
+    flex-direction: column;
 
-    &:nth-of-type(1) {
-      width: 100vw;
-      @media screen and (max-width: 1440px) {
-        flex-direction: column;
-      }
-    }
-
-    h4 {
-      color: #000000;
-      margin: 24px 1px;
-      font-size: 25px;
-      font-family: Gilroy;
-      line-height: 40px;
-      font-weight: 300;
-      margin-bottom: 0px;
-    }
-
-    p {
-      padding: 1px 80px;
-      font-family: Gilroy;
-    }
-
-    .techDescription {
-      position: relative;
-      display: flex;
+    div {
       flex-direction: column;
-
-      div {
-        flex-direction: column;
-      }
     }
   }
 `;

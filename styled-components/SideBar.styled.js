@@ -8,12 +8,11 @@ export const RightSideBar = styled.div`
   background-color: #d6d6d6;
   position: fixed;
   right: 0;
-  z-index: 10000;
-
+  z-index: 10;
 
   @media (max-width: 812px) {
-      display: none;
-    }
+    display: none;
+  }
 
   span {
     cursor: pointer;
@@ -124,6 +123,5 @@ export const RightSideBar = styled.div`
     left: 32px;
     right: 31px;
     top: 832.63px;
-    white-space: nowrap;
   }
 `;

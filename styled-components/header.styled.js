@@ -114,7 +114,7 @@ export const Wrapper = styled.div`
 
   .plash {
     position: absolute;
-    width: 100vw;
+    width: 80vw;
     height: 1px;
     top: 583px;
     background: #d6d6d6;
@@ -130,7 +130,7 @@ export const Wrapper = styled.div`
     height: 800px;
     width: 960px;
     background-position: 100%;
-    z-index: 10;
+    z-index: 8;
 
     @media (max-width: 1900px) {
       width: 940px;
