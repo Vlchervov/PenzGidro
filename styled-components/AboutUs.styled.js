@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const AboutCompany = styled.div`
   display: flex;
+  height: fit-content;
+  flex-direction: column;
   justify-content: space-between;
+  padding-right: 85px;
 
   h2:nth-child(1) {
     font-size: 47px;
@@ -23,12 +26,17 @@ export const AboutCompany = styled.div`
   }
 
   div {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
 
+    &:nth-child(2) {
+      @media screen and (max-width: 1440px) {
+        flex-wrap: wrap;
+      }
+    }
+
     img {
-      margin-top: 404px;
       height: 580px;
       width: 881px;
     }
@@ -39,16 +47,24 @@ export const AboutCompany = styled.div`
       line-height: 32px;
       color: #101010;
       letter-spacing: 0.026em;
-      padding: 375px 0 0 79px;
     }
 
     p {
       font-family: Gilroy;
       font-size: 18px;
       line-height: 32px;
-      white-space: nowrap;
-      position: absolute;
-      margin: 563px 0 0 960px;
+      margin: 0px 0 0 0px;
+    }
+
+    .aboutDescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0px 0px 0 79px;
+
+      @media screen and (max-width: 1440px) {
+        padding-left: 0;
+      }
     }
   }
 `;

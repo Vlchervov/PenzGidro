@@ -4,10 +4,11 @@ export const RightSideBar = styled.div`
   margin: 0;
   padding: 0;
   width: 80px;
-  height: 2628px;
+  height: 100vh;
   background-color: #d6d6d6;
-  position: absolute;
+  position: fixed;
   right: 0;
+  z-index: 10000;
 
 
   @media (max-width: 812px) {

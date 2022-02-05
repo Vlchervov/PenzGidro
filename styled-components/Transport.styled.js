@@ -2,30 +2,32 @@ import styled from "styled-components";
 
 export const AboutTransport = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  padding-right: 85px;
 
   h2 {
     font-family: Gilroy;
     font-size: 47px;
-    padding: 714px 0 0 80px;
+    padding: 0px 0 0 80px;
     color: #1c1c1c;
     font-weight: 300;
     margin-bottom: 0px;
   }
 
   img {
-    position: absolute;
     height: 620px;
     width: 881px;
-    margin-top: 866px;
   }
 
   div {
     cursor: pointer;
-    width: 880px;
-    margin: 866px 142px 0 0;
-    height: 310px;
+    max-width: 73%;
+    margin: 0px 142px 0 0;
     background: #f6f6f6;
+    @media screen and (max-width: 1440px) {
+        max-width: 100%;
+      }
 
     h4 {
       font-family: Gilroy;
@@ -45,11 +47,18 @@ export const AboutTransport = styled.div`
     }
   }
 
-  div:nth-last-child(1) {
+  div{
     cursor: pointer;
     background-color: white;
-    position: absolute;
-    margin: 1180px 880px 0;
+    margin: 0px 0px 0;
+    display: flex;
+
+    &:nth-of-type(1) {
+      width: 100vw;
+      @media screen and (max-width: 1440px) {
+        flex-direction: column;
+      }
+    }
 
     h4 {
       color: #000000;
@@ -63,8 +72,17 @@ export const AboutTransport = styled.div`
 
     p {
       padding: 1px 80px;
-      white-space: nowrap;
       font-family: Gilroy;
+    }
+
+    .techDescription {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        flex-direction: column;
+      }
     }
   }
 `;

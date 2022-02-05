@@ -114,46 +114,23 @@ export const Wrapper = styled.div`
 
   .plash {
     position: absolute;
-    width: 880px;
+    width: 100vw;
     height: 1px;
     top: 583px;
     background: #d6d6d6;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 
-    @media (max-width: 1900px) {
-      width: 860px;
-    }
-
-    @media (max-width: 1840px) {
-      width: 800px;
-    }
-
-    @media (max-width: 1790px) {
-      width: 784px;
-    }
-
-    @media (max-width: 1778px) {
-      width: 784px;
-    }
-
-
-    @media (max-width: 1720px) {
-      width: 720px;
-    }
-
-    @media (max-width: 1560px) {
-      width: 683px
-    }
-
   
   }
 
   .tanksAndSmokeStacks {
+    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
       url("../img/tanks-and-smokestacks-P8YMA6G.jpg");
     height: 800px;
     width: 960px;
     background-position: 100%;
+    z-index: 10;
 
     @media (max-width: 1900px) {
       width: 940px;
