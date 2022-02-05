@@ -12,8 +12,8 @@ const Index = () => {
       <Navbar />
       <SideBar />
       <Header />
-      <AboutUs />
-      <Transport />
+      {/* <AboutUs />
+      <Transport /> */}
     </>
   );
 };

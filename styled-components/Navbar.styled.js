@@ -3,6 +3,31 @@ import styled from "styled-components";
 export const Navigation = styled.nav`
   position: absolute;
   right: 103px;
+
+
+  @media (max-width: 1840px) {
+    right: 125px;
+  }
+
+  @media (max-width: 1800px) {
+    right: 80px;
+  }
+
+  @media (max-width: 1720px) {
+    right: 116px;
+  }
+
+  @media (max-width: 1612px) {
+      right: 50px;
+    }
+
+  @media (max-width: 1580px) {
+      right: 65px;
+    }
+
+
+
+
   ul {
     display: flex;
     justify-content: flex-end;
@@ -28,6 +53,11 @@ export const Navigation = styled.nav`
     font-family: Gilroy;
     color: #f6f6f6;
     opacity: 0.6;
+
+    @media (max-width: 1580px) {
+      padding: 43px 30px 5px;
+      font-size: 13px;
+    }
 
     :hover {
       opacity: 1;

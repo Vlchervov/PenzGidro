@@ -9,6 +9,11 @@ export const RightSideBar = styled.div`
   position: absolute;
   right: 0;
 
+
+  @media (max-width: 812px) {
+      display: none;
+    }
+
   span {
     cursor: pointer;
     position: absolute;

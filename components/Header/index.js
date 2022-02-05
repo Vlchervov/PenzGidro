@@ -12,7 +12,7 @@ const Header = () => {
           <strong></strong>
           <span></span>
           <a>Компания</a>
-          <div className="splash"></div>
+          <div className="plash"></div>
           <p>
             Основная сфера деятельности «ПензГидромаш» — <br /> создание систем
             для нефтяной, газовой, химической <br /> и нефтехимической сфер
