@@ -3,31 +3,11 @@ import styled from "styled-components";
 export const Navigation = styled.nav`
   z-index: 10;
   position: absolute;
-  right: 103px;
+  right: 110px;
 
-
-  @media (max-width: 1840px) {
-    right: 125px;
+  @media (max-width: 812px) {
+    display: none;
   }
-
-  @media (max-width: 1800px) {
-    right: 80px;
-  }
-
-  @media (max-width: 1720px) {
-    right: 116px;
-  }
-
-  @media (max-width: 1612px) {
-      right: 50px;
-    }
-
-  @media (max-width: 1580px) {
-      right: 65px;
-    }
-
-
-
 
   ul {
     display: flex;
@@ -43,6 +23,7 @@ export const Navigation = styled.nav`
   }
 
   li {
+    user-select: none;
     color: white;
     padding: 43px 39.6px 15px;
     font-size: 14px;

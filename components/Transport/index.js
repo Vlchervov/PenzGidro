@@ -1,5 +1,6 @@
 import { AboutTransport } from "../../styled-components/Transport.styled";
 import { useState } from "react";
+import { Swiper, useSwiper } from "swiper/react";
 
 export const Transport = () => {
   const [state, setState] = useState(true);

@@ -28,5 +28,16 @@ const GlobalStyle = createGlobalStyle`
         overscroll-behavior: none;
         background-color: white;
     }
+
+    ::-webkit-scrollbar {
+        height: 8px;
+        width: 10px;
+    background-color: #d6d6d6;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(253, 12, 0, 0.6), rgba(252, 0, 313, 0.5));
+    border-radius: 25px;
+}
  `;
 export default GlobalStyle;

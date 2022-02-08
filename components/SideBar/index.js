@@ -5,14 +5,8 @@ export const SideBar = () => {
     <RightSideBar>
       <span></span>
       <span></span>
-      <strong></strong>
-      <strong></strong>
-      <strong></strong>
-      <strong></strong>
-      <strong></strong>
-      <strong></strong>
       <a>Меню</a>
-      <a>Листайте вниз</a>
+      <a></a>
     </RightSideBar>
   );
 };

@@ -4,19 +4,24 @@ export const RightSideBar = styled.div`
   margin: 0;
   padding: 0;
   width: 80px;
-  height: 100vh;
+  height: 2652px;
   background-color: #d6d6d6;
-  position: fixed;
+  position: absolute;
   right: 0;
   z-index: 10;
 
-  @media (max-width: 812px) {
-    display: none;
+  @media (max-width: 1440px) {
+    height: 3800px;
   }
 
-  span {
-    cursor: pointer;
+  @media (max-width: 812px) {
+    height: 0px;
+    background: none;
+  }
+
+  span:nth-of-type(1) {
     position: absolute;
+    cursor: pointer;
     top: 45px;
     left: 24px;
     margin: 0;
@@ -24,11 +29,15 @@ export const RightSideBar = styled.div`
     width: 30px;
     height: 2px;
     background-color: #1c1c1c;
+
+    @media (max-width: 812px) {
+      background: white;
+    }
   }
 
   span:nth-of-type(2) {
-    cursor: pointer;
     position: absolute;
+    cursor: pointer;
     top: 55px;
     left: 24px;
     margin: 0;
@@ -36,69 +45,13 @@ export const RightSideBar = styled.div`
     width: 30px;
     height: 2px;
     background-color: #1c1c1c;
-  }
 
-  strong {
-    position: absolute;
-    width: 51.33px;
-    height: 0;
-    border: 1px solid #1c1c1c;
-    transform: matrix(0, 1, 1, 0, 0, 0);
-    top: 993px;
-    left: 15px;
+    @media (max-width: 812px) {
+      background: white;
+    }
   }
-
-  strong:nth-of-type(2) {
-    position: absolute;
-    width: 40.11px;
-    height: 0;
-    border: 1px solid #1c1c1c;
-    top: 1001px;
-    left: 33px;
-    transform: rotate(-55deg);
-  }
-
-  strong:nth-of-type(3) {
-    position: absolute;
-    width: 40.11px;
-    height: 0;
-    border: 1px solid #1c1c1c;
-    top: 1003px;
-    left: 10px;
-    transform: rotate(55deg);
-  }
-
-  strong:nth-of-type(4) {
-    position: absolute;
-    width: 51.33px;
-    height: 0;
-    border: 1px solid #1c1c1c;
-    transform: matrix(0, 1, 1, 0, 0, 0);
-    top: 2554.71px;
-    left: 15px;
-  }
-
-  strong:nth-of-type(5) {
-    position: absolute;
-    width: 40.11px;
-    height: 0;
-    border: 1px solid #1c1c1c;
-    top: 2546px;
-    left: 32.4px;
-    transform: rotate(55deg);
-  }
-
-  strong:nth-of-type(6) {
-    position: absolute;
-    width: 40.11px;
-    height: 0;
-    border: 1px solid #1c1c1c;
-    top: 2546px;
-    left: 9px;
-    transform: rotate(-55deg);
-  }
-
   a {
+    cursor: pointer;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -107,10 +60,15 @@ export const RightSideBar = styled.div`
     right: 32px;
     color: #1c1c1c;
     font-family: Gilroy;
+    user-select: none;
     line-height: 16px;
     font-size: 14px;
     text-transform: uppercase;
     transform: rotate(90deg);
+
+    @media (max-width: 812px) {
+      display: none;
+    }
   }
 
   a:last-child {
@@ -119,9 +77,28 @@ export const RightSideBar = styled.div`
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #1c1c1c;
-    transform: rotate(90deg);
-    left: 32px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    transform: rotate(360deg);
+    left: 20px;
     right: 31px;
     top: 832.63px;
+    width: 50px;
+    height: 214px;
+    background: url("../img/arrow1.svg");
+    white-space: nowrap;
+
+    ::after {
+      width: 49px;
+      height: 49px;
+      top: 1750.08px;
+      position: absolute;
+      content: "";
+      background: url("../img/Union.svg") no-repeat;
+
+      @media (max-width: 1440px) {
+        top: 2850px;
+      }
+    }
   }
 `;
