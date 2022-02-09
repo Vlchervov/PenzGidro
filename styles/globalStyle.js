@@ -29,6 +29,12 @@ const GlobalStyle = createGlobalStyle`
         background-color: white;
     }
 
+    .swiper-wrapper {
+        display: flex;
+        overflow-x: hidden;
+  }
+
+
     ::-webkit-scrollbar {
         height: 8px;
         width: 10px;
