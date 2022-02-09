@@ -1,22 +1,35 @@
-import { AboutTransport } from "../../styled-components/Transport.styled";
+import {
+  AboutTransport,
+  TransportWrapper,
+} from "../../styled-components/Transport.styled";
 import { useState } from "react";
+import SwiperCore, { EffectFade, Keyboard, SwiperOptions } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useMediaQuery } from "react-responsive";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 
+SwiperCore.use([Keyboard]);
+
 export const Transport = () => {
   const isMobile = useMediaQuery({ maxWidth: "812px" });
-  const [slider, setSlider] = useState(null);
+  const [_slider, setSlider] = useState(null);
   const [state, setState] = useState(true);
+  const SwiperOptions = {
+    speed: 2500,
+    slidesPerView: 1,
+    resizeObserver: true,
+    keyboard: {
+      onlyInViewport: true,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  };
   return (
     <>
-      {isMobile ? (
-        <Swiper
-          onSwiper={setSlider}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          resizeObserver={true}
-        >
+      {isMobile && (
+        <Swiper {...SwiperOptions}>
           <SwiperSlide>
             <img
               style={{
@@ -62,10 +75,10 @@ export const Transport = () => {
             ></img>
           </SwiperSlide>
         </Swiper>
-      ) : (
+      )}
+      {!isMobile && (
         <AboutTransport change={state}>
-          <h2>Транспорт</h2>
-          <div>
+          <TransportWrapper>
             <img
               src={
                 state
@@ -75,6 +88,7 @@ export const Transport = () => {
             ></img>
             <div className="techDescription">
               <div
+                className="what"
                 onMouseOver={() => {
                   setState(true);
                 }}
@@ -87,6 +101,7 @@ export const Transport = () => {
                 </p>
               </div>
               <div
+                className="ironRoad"
                 onMouseOver={() => {
                   setState(false);
                 }}
@@ -100,7 +115,7 @@ export const Transport = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </TransportWrapper>
         </AboutTransport>
       )}
     </>

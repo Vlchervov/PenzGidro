@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -29,9 +29,23 @@ const GlobalStyle = createGlobalStyle`
         background-color: white;
     }
 
+.swiper {
+    overflow-x: hidden;
+}
+
+.swiper-initialized {
+    overflow-x: hidden;
+}
+
     .swiper-wrapper {
+        
         display: flex;
-        overflow-x: hidden;
+        position: relative;
+  }
+
+  .swiper-slide {
+      position: relative;
+      flex-shrink: 0;
   }
 
 
