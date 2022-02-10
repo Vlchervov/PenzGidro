@@ -137,7 +137,7 @@ export const Transport = () => {
             ></img>
             <div className="techDescription">
               <div
-                className="what"
+                className="transportDescription"
                 onMouseOver={() => {
                   setState(true);
                 }}
@@ -150,7 +150,7 @@ export const Transport = () => {
                 </p>
               </div>
               <div
-                className="ironRoad"
+                className="railWayDescription"
                 onMouseOver={() => {
                   setState(false);
                 }}

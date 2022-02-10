@@ -49,7 +49,7 @@ export const AboutTransport = styled.div`
     }
   }
 
-  .what {
+  .transportDescription {
     @media (max-width: 1440px) {
       flex-wrap: wrap;
     }
@@ -83,7 +83,7 @@ export const AboutTransport = styled.div`
     }
   }
 
-  .ironRoad {
+  .railWayDescription {
     @media (max-width: 1440px) {
       flex-wrap: wrap;
     }
