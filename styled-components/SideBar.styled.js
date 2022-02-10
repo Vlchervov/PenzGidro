@@ -10,8 +10,43 @@ export const RightSideBar = styled.div`
   right: 0;
   z-index: 10;
 
+  @media (max-width: 1660px) {
+    height: 2740px;
+  }
+
+  @media (max-width: 1600px) {
+    height: 2730px;
+  }
+
+  @media (max-width: 1536px) {
+    height: 2780px;
+  }
+  @media (max-width: 1453px) {
+    height: 2920px;
+  }
   @media (max-width: 1440px) {
-    height: 3800px;
+    height: 3080px;
+    right: 0;
+  }
+
+  @media (max-width: 1400px) {
+    height: 3850px;
+  }
+
+  @media (max-width: 1368px) {
+    height: 3850px;
+  }
+
+  @media (max-width: 1000px) {
+    height: 3600px;
+  }
+
+  @media (max-width: 950px) {
+    height: 3662px;
+  }
+
+  @media (max-width: 820px) {
+    height: 3720px;
   }
 
   @media (max-width: 812px) {
@@ -96,8 +131,40 @@ export const RightSideBar = styled.div`
       content: "";
       background: url("../img/Union.svg") no-repeat;
 
+      @media (max-width: 1660px) {
+        top: 1830px;
+      }
+
+      @media (max-width: 1600px) {
+        top: 1800px;
+      }
+
+      @media (max-width: 1460px) {
+        top: 2000px;
+      }
+
       @media (max-width: 1440px) {
-        top: 2850px;
+        top: 2150px;
+      }
+
+      @media (max-width: 1400px) {
+        top: 2950px;
+      }
+
+      @media (max-width: 1368px) {
+        top: 2920px;
+      }
+
+      @media (max-width: 1000px) {
+        top: 2680px;
+      }
+
+      @media (max-width: 950px) {
+        top: 2720px;
+      }
+
+      @media (max-width: 820px) {
+        top: 2820px;
       }
     }
   }

@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
 
 .swiper-initialized {
     overflow-x: hidden;
+    padding-top: 20px;
 }
 
     .swiper-wrapper {

@@ -41,6 +41,14 @@ export const AboutCompany = styled.div`
         color: #1C1C1C;
         font-size: 45px;
       }
+
+      @media (max-width: 812px) {
+        padding: 120px 0 31px 29px;
+      }
+
+      @media (max-width: 375px) {
+        padding: 260px 0px 31px 29px;
+      }
   }
 
     p {
@@ -51,6 +59,10 @@ export const AboutCompany = styled.div`
     font-weight: bold;
     line-height: 40px;
     color: #1C1C1C;
+
+    @media(max-width: 1440px) {
+      padding: 15px 60px 125px 78px;
+    }
 
     @media (max-width: 812px) {
       font-size: 22px;
@@ -88,12 +100,20 @@ export const AboutCompany = styled.div`
         flex-direction: column;
       }
       @media screen and (max-width: 1440px) {
+        padding-top: 0;
         flex-wrap: wrap;
       }
 
       img {
+        @media(max-width: 900px) {
+          width: 90vw;
+        }
         @media (max-width: 812px) {
           width: 100vw;
+
+          @media (max-width: 1440px) {
+        flex-wrap: wrap;
+    }
         }
       }
 
@@ -105,6 +125,11 @@ export const AboutCompany = styled.div`
       color: #000000;
       letter-spacing: 0.026em;
       margin-top: 0px;
+
+      @media (max-width: 1440px) {
+      padding-top: 31px;
+      flex-wrap: wrap;
+    }
 
       @media (max-width: 812px) {
         color: #1C1C1C;
@@ -124,6 +149,10 @@ export const AboutCompany = styled.div`
       margin: 0px 0 0 0px;
       padding: 10px 0 0 0;
       color: #000000;
+
+      @media (max-width: 1440px) {
+      flex-wrap: wrap;
+    }
 
       @media (max-width: 812px) {
         padding-top: 0px;

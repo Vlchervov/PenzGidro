@@ -6,15 +6,15 @@ export const Wrapper = styled.div`
   .Main {
     width: 100vw;
     display: flex;
+
+    @media (max-width: 940px) {
+      width: 100%;
+    }
     @media (max-width: 812px) {
       flex-direction: column;
       height: 78vh;
       padding: 0 0 0 0;
       margin: 0 0 0 0;
-    }
-
-    @media (max-width: 1540px) {
-      height: 85vh;
     }
   }
 
@@ -24,6 +24,15 @@ export const Wrapper = styled.div`
 
     @media (max-width: 1540px) {
       flex: 0 0 47%;
+      height: 95vh;
+    }
+
+    @media (max-width: 1368px) {
+      height: 95vh;
+    }
+
+    @media (max-width: 1000px) {
+      flex: 0.88;
     }
   }
 
@@ -101,6 +110,10 @@ export const Wrapper = styled.div`
     padding: 27px 0 0 80px;
     user-select: none;
 
+    @media (max-width: 1000px) {
+      font-size: 62px;
+    }
+
     @media (max-width: 812px) {
       font-size: 40px;
       padding: 20px 0 0 30px;
@@ -115,6 +128,23 @@ export const Wrapper = styled.div`
     line-height: 40px;
     font-weight: 300;
     user-select: none;
+
+    @media (max-width: 1505px) {
+      padding: 230px 0 0 30px;
+    }
+
+    @media (max-width: 1400px) {
+      padding: 200px 0 0 25px;
+    }
+
+    @media (max-width: 1160px) {
+      font-size: 20px;
+      padding: 200px 0 0 15px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 18px;
+    }
 
     @media (max-width: 812px) {
       font-size: 22px;
@@ -146,6 +176,10 @@ export const Wrapper = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("../img/tanks-and-smokestacks-P8YMA6G.jpg");
     z-index: 8;
+
+    @media (max-width: 1368px) {
+      height: 95vh;
+    }
 
     @media (max-width: 812px) {
       background: url("../img/tanks-and-smokestacks-P8YMA6G.jpg");
