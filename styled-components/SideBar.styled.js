@@ -15,35 +15,49 @@ export const RightSideBar = styled.div`
     background: none;
   }
 
-  span:nth-of-type(1) {
-    position: absolute;
+  div {
+    width: 33px;
+    height: 16px;
+    margin-top: 43px;
+    margin-left: 22px;
+    padding: 0px;
+
     cursor: pointer;
-    top: 45px;
-    left: 24px;
-    margin: 0;
-    padding: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #1c1c1c;
+    ul {
+      cursor: pointer;
+      list-style: none;
+      width: 30px;
+      height: 2px;
 
-    @media (max-width: 812px) {
-      background: white;
-    }
-  }
+      li:nth-child(1) {
+        position: absolute;
+        top: 45px;
+        left: 24px;
+        margin: 0;
+        padding: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #1c1c1c;
 
-  span:nth-of-type(2) {
-    position: absolute;
-    cursor: pointer;
-    top: 55px;
-    left: 24px;
-    margin: 0;
-    padding: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #1c1c1c;
+        @media (max-width: 812px) {
+          background: white;
+        }
+      }
 
-    @media (max-width: 812px) {
-      background: white;
+      li:nth-child(2) {
+        position: absolute;
+        top: 55px;
+        left: 24px;
+        margin: 0;
+        padding: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #1c1c1c;
+
+        @media (max-width: 812px) {
+          background: white;
+        }
+      }
     }
   }
 
