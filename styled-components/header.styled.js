@@ -21,19 +21,6 @@ export const Wrapper = styled.div`
   .info {
     flex: 0 0 46%;
     background: #5551f7;
-
-    @media (max-width: 1540px) {
-      flex: 0 0 47%;
-      height: 95vh;
-    }
-
-    @media (max-width: 1368px) {
-      height: 95vh;
-    }
-
-    @media (max-width: 1000px) {
-      flex: 0.88;
-    }
   }
 
   .logo {
@@ -169,17 +156,14 @@ export const Wrapper = styled.div`
   }
 
   .tanksAndSmokeStacks {
-    display: flex;
     flex: 0 0 50.5%;
-    background-position: 100.5%;
-    background-repeat: no-repeat;
+    z-index: 8;
+    size: auto 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("../img/tanks-and-smokestacks-P8YMA6G.jpg");
-    z-index: 8;
-
-    @media (max-width: 1368px) {
-      height: 95vh;
-    }
+    background-position: 100.5%;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
 
     @media (max-width: 812px) {
       background: url("../img/tanks-and-smokestacks-P8YMA6G.jpg");

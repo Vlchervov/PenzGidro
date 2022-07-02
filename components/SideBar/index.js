@@ -6,7 +6,6 @@ export const SideBar = () => {
       <span></span>
       <span></span>
       <a>Меню</a>
-      <a></a>
     </RightSideBar>
   );
 };
